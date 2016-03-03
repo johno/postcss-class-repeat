@@ -1,5 +1,7 @@
 # postcss-class-repeat [![Build Status](https://secure.travis-ci.org/johnotander/postcss-class-repeat.png?branch=master)](https://travis-ci.org/johnotander/postcss-class-repeat) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
+Repeat class selectors to increase specificity, useful for using utility classes with legacy codebases with high specificity
+
 ## Installation
 
 ```bash
@@ -46,6 +48,34 @@ postcss([ classRepeat() ]).process(myCss).css
 
 @media screen and (min-width: 123em) {
   .yay.yay { color: red; }
+}
+```
+
+##### Options
+
+- `repeat`: Number, amount of times to repeat the class selectors. Default: `2`
+
+###### Using custom options
+
+```javascript
+var postcss = require('postcss')
+var classRepeat = require('postcss-class-repeat')
+
+postcss([ classRepeat({ repeat: 4 }) ]).process(myCss).css
+```
+
+```css
+.foo.foo.foo.foo.bar.bar.bar.bar,
+.baz:before.baz:before.baz:before.baz:before {
+  color: tomato;
+}
+
+.hello.hello.hello.hello > .world.world.world.world {
+  background-color: tomato;
+}
+
+@media screen and (min-width: 123em) {
+  .yay.yay.yay.yay { color: red; }
 }
 ```
 
