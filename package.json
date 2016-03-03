@@ -11,7 +11,14 @@
     "test": "ava"
   },
   "repository": "johnotander/postcss-class-repeat",
-  "keywords": [],
+  "keywords": [
+    "class",
+    "css",
+    "repeat",
+    "specificity",
+    "postcss",
+    "postcss-plugin"
+  ],
   "license": "MIT",
   "dependencies": {
     "class-repeat": "^1.0.1",
