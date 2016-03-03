@@ -1,0 +1,12 @@
+.foo.bar,
+.baz:before {
+  color: tomato;
+}
+
+.hello > .world {
+  background-color: tomato;
+}
+
+@media screen and (min-width: 123em) {
+  .yay { color: red; }
+}

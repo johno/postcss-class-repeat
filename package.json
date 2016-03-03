@@ -1,0 +1,25 @@
+{
+  "name": "postcss-class-repeat",
+  "description": "Repeat class selectors to increase specificity",
+  "author": "John Otander",
+  "version": "0.1.0",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": "johnotander/postcss-class-repeat",
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {
+    "class-repeat": "^1.0.1",
+    "has-class-selector": "^1.0.0",
+    "is-present": "^1.0.0",
+    "postcss": "^5.0.19"
+  },
+  "devDependencies": {
+    "ava": "*"
+  }
+}
