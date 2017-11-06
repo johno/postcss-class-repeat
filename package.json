@@ -2,7 +2,7 @@
   "name": "postcss-class-repeat",
   "description": "Repeat class selectors to increase specificity",
   "author": "John Otander",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "index.js",
   "files": [
     "index.js"
