@@ -21,7 +21,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "class-repeat": "^1.0.1",
+    "class-repeat": "^1.0.2",
     "has-class-selector": "^1.0.0",
     "is-present": "^1.0.0",
     "postcss": "^5.0.19"
