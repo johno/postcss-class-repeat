@@ -38,7 +38,7 @@ postcss([ classRepeat() ]).process(myCss).css
 
 ```css
 .foo.foo.bar.bar,
-.baz:before.baz:before {
+.baz.baz:before {
   color: tomato;
 }
 
